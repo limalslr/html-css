@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Imagem de fundo</title>
+    <style>
+        body {
+            background-image: url('imagens/wallpaper001.jpg');
+        }
+        div.quadrado {
+            display: inline-block; /*configuração para as DIV fiquem lado-a-lado*/
+            border: 2px solid black;
+            border-radius: 10px;
+            background-color: lightgrey;
+            width: 300px;
+            height: 300px;
+        }
+
+        div#q1 {
+            background-color: skyblue;
+        }
+
+        div#q2 {
+            background-image: linear-gradient(to bottom, yellow, red); /*nesse exemplo a imagem foi criada com a composição de cores*/
+        }
+
+        div#q3 {background-image: url('imagens/pattern003.png');
+        }
+
+        div#q4 {
+            background-image: url('imagens/pattern001.png'); /*nesse exemplo a imagem carregada é pequena, para compor a janela, foi multiplicada várias vezes*/
+        }
+
+        div#q5 {
+            background-image: url('imagens/wallpaper002.jpg'); /*nesse exemplo a imagem carregada do arquivo, não se ajustou a janela*/
+        }
+
+    </style>
+</head>
+<body>
+    <div class="quadrado" id="q1">
+    </div>
+    
+    <div class="quadrado" id="q2">
+    </div>
+
+    <div class="quadrado" id="q3">
+    </div>
+
+    <div class="quadrado" id="q4">
+    </div>
+
+    <div class="quadrado" id="q5"></div>
+</body>
+</html>

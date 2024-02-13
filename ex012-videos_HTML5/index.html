@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor</p>
+        <video width="560" poster="imagens/limoes-capa.png" controls autoplay loop><!--560 limita largura de exibição na página-->>
+        <source src="midia/Meu-Video1.webm" type="video/webm">
+        <source src="midia/Meu-Video1.mkv" type="video/mkv">
+        <source src="midia/Meu-Video1.mp4" type="video/mp4">
+        <source src="midia/meu-video.ogv" type="video/ogv">        
+        </video>
+        <p>Seu navegador não tem compatibilidade com o reprodutor de vídeo</p>
+
+    <h1>Inserindo vídeos do youtube</h1>
+    <!--Selecione o vídeo e clique em compartilhar. Localiza <> (incorporar) e copie o código HTML-->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/bYl7N4U-JMI?si=gg39zZb6jW_3NMSl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/6iw6GmoX3Lc?si=1DvGJNEW-bixGnVF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    
+</body>
+</html>
