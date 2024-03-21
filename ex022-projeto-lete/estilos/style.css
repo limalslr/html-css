@@ -9,10 +9,6 @@
     src: url(../fontes/Handlee/Handlee-Regular.ttf);
 }
 
-body {
-    background-image: url('../imagens/logo_transparente.png');
-}
-
 :root {
     --cor0: #078C03;
     --cor1: #A62E2E;
@@ -25,7 +21,7 @@ body {
 }
 
 header {
-    background-image: linear-gradient(to right, var(--cor2), var(--cor3)) ;        
+    background-image: linear-gradient(to right, var(--cor2), var(--cor3));        
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.541);
     border-radius: 10px;
     padding: 10px;
@@ -75,34 +71,6 @@ menu > ul > li > a:hover {
     background-color: gray;
 }
 
-a {
-    font-family: var(--font1);
-    color: var(--cor1);
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-    transition-duration: 1s;
-    padding: 10px;  
-}
-
-a:hover {
-    color: var(--cor2);
-    background-color: var(--cor0);    
-}
-
-
-    /*height: 100vh;
-    background-color: black;
-    background-image: url('imagens/wallpaper002.jpg');
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;*/
-    
-h2 {            
-    font-family: var(--font1);
-}
-
 body {
     height: 100lvh;
     background-color: var(--cor3);
@@ -112,6 +80,33 @@ body {
     
 }
 
+main {
+    height:  100vh;
+    position: relative;
+}
+
+section#redes-sociais img {
+    width: 50px;
+    margin: 5px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.400);
+    box-sizing: border-box;
+}
+
+section#redes-sociais img:hover {
+    border: 2px solid rgba(255, 255, 255, 0.623);
+    transform: translate(-3px, -3px);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.623);
+    transition: transform .3s border 1s;
+}
+    
+h2 {
+    color: var(--cor1);       
+    font-family: var(--font1);
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.299);
+    margin: 10px;
+}
+
 main > p > a {
     text-decoration: none;
 }
@@ -119,12 +114,5 @@ main > p > a {
 img {
     border-radius: 10px;        
     box-shadow: 0px 2px 3px black;
+    margin: 10px;
 }
-
-/*p {
-    font-family: var(--font1);
-    color: var(--cor1);
-}*/
-    
-    
-
