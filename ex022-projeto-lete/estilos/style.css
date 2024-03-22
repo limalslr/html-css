@@ -58,11 +58,12 @@ menu > ul {
 }
 
 menu > ul > li > a {
+    font-family: var(--font1);
     display: block;
     padding: 10px;
     text-decoration: none;
     background-color: rgb(87, 87, 87);
-    color: white;
+    color: var(--cor3);
     text-align: center;
     border-top: 2px solid gray;
 }
