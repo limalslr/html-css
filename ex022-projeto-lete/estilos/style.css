@@ -46,7 +46,7 @@ i#burguer {
 
 i#burguer:hover {
     background-image: linear-gradient(to right, var(--cor2), var(--cor3)) ; 
-    color: black;
+    color: var(--cor1);
 }
 
 menu {
@@ -54,7 +54,7 @@ menu {
 }
 
 menu > ul {
-    list-style: none;
+    list-style-type: none;
 }
 
 menu > ul > li > a {
@@ -62,14 +62,15 @@ menu > ul > li > a {
     display: block;
     padding: 10px;
     text-decoration: none;
-    background-color: rgb(87, 87, 87);
-    color: var(--cor3);
     text-align: center;
+    background-color: rgb(87, 87, 87);
+    color: var(--cor3);    
     border-top: 2px solid gray;
 }
 
 menu > ul > li > a:hover {
-    background-color: gray;
+    color: var(--cor3);
+    background-color: var(--cor1);
 }
 
 body {

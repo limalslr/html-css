@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="imagens/logo.ico/favicon.ico" type="image/x-icon">
     <title>Pagina Inicial</title>
-    <link rel="stylesheet" href="estilos/style.css" media="all">
-    <link rel="stylesheet" href="estilos/retrato.css" media="screen and (orientation: portrait)">
-    <link rel="stylesheet" href="estilos/paisagem.css" media="screen and (orientation: landscape)">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
-   </head>    
+</head>
+<body onresize="mudouTamanho()"> 
     <header>
         <h1>DELÍCIA DE BORDADO</h1>
         <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
@@ -22,19 +22,10 @@
                 <li><a href="kits.html">Kit's</a></li>
             </ul>
         </menu>
-            <!--<nav>
-                <a href="#">Arquivos</a>
-                <a href="#">Pacht Work</a>
-                <a href="#">Bordados</a>
-                <a href="#">Para bebês</a>
-                <a href="#">Kit's</a>
-            </nav>-->
-    </header>
-    <body>
+    </header>    
         <main>          
             <h2>Bordados lindos para você curtir</h2>
             <img src="../ex022-projeto-lete/imagens/Arlete_busto2.jpg" alt="">
-        </section>
         <section id="redes-sociais">
             <a href="home.html" target="tela"><img src="imagens/logo-home.jpg" alt=""></a>
             <a href="youtube.html" target="tela"><img src="imagens/logo-youtube.jpg" alt=""></a>
@@ -43,15 +34,21 @@
             <a href="facebook.html" target="tela"><img src="imagens/logo-facebook.jpg" alt=""></a>   
         </section>
         </main>
-    <script>
-        function clickMenu () {
-            if (itens.style.display == 'block') {
-                itens.style.display = 'none'
-            } else {
-                itens.style.display = 'block'
+        <script>
+            function mudouTamanho() {
+                if (window.innerHeight >= 768) {
+                    itens.style.display - 'block'
+                } else {
+                    itens.style.display = 'none'
+                }
             }
-        }
-    </script>
-
+            function clickMenu () {
+                if (itens.style.display == 'block') {
+                    itens.style.display = 'none'
+                } else {
+                    itens.style.display = 'block'
+                }
+            }
+        </script>
     </body>
     </html>
