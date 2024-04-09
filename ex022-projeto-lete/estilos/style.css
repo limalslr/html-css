@@ -83,9 +83,10 @@ body {
 }
 
 main {
-    height:  100vh;
+    height:  50vh;
     position: relative;
 }
+
 
 section#redes-sociais img {
     width: 50px;
@@ -107,6 +108,12 @@ h2 {
     font-family: var(--font1);
     text-shadow: 1px 1px rgba(0, 0, 0, 0.299);
     margin: 10px;
+}
+
+h3 > p {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    width: 70vw;
 }
 
 main > p > a {
