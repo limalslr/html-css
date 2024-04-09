@@ -9,13 +9,13 @@
     - Grandes telas = acima de 1201px    
     */
 
-@media screen and (min-widht: 768px) {
+@media screen and (min-widht: 400px) {
 
     i#burguer {
         display: none;
     }
 
-    menu {
+    menu > ul {
         display: block;
     }
 
@@ -24,7 +24,7 @@
     }
 
     main {
-        width: 768;
+        width: 480px;
     }
 
 }
